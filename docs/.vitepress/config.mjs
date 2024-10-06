@@ -7,13 +7,20 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Python学习', link: 'python/index' }
+      { text: 'Python学习', link: 'python/index' },
+      { text: 'AI学习', link: 'ai/index' }
     ],
 
-    sidebar: {'/python':[
-      { text: '基础入门', link: '/python/基础入门' },
-      { text: '进阶提升', link: '/python/进阶提升' }
-    ]},
+    sidebar: {
+      '/python':[
+        { text: '基础入门', link: '/python/基础入门' },
+        { text: '进阶提升', link: '/python/进阶提升' }
+      ],
+      '/ai':[
+        { text: '基础入门', link: '/ai/基础入门' },
+        { text: '进阶提升', link: '/ai/进阶提升' }
+      ]
+  },
 
     socialLinks: [
       { 
@@ -24,6 +31,37 @@ export default defineConfig({
       },
       { icon: 'github', link: 'https://github.com/ysa0327' }
     ],
+
+    footer: {
+      message: `<a href="https://beian.miit.gov.cn/" target="_blank">沪ICP备123456789号-2</a>`,
+      copyright: `版权所有 © 2024-${new Date().getFullYear()} 爱德华`,
+    },
+
+    docFooter: {
+      prev: "上一页",
+      next: "下一页",
+    },
+
+    // https://vitepress.dev/zh/reference/default-theme-config#outline
+    outline: {
+      level: [2, 3],
+      label: "页面导航",
+    },
+
+    lastUpdated: {
+      text: "最后更新于",
+      formatOptions: {
+        dateStyle: "short", // full
+        timeStyle: "short", // medium
+      },
+    },
+
+    langMenuLabel: "多语言",
+    returnToTopLabel: "回到顶部",
+    sidebarMenuLabel: "菜单",
+    darkModeSwitchLabel: "主题",
+    lightModeSwitchTitle: "切换到浅色模式",
+    darkModeSwitchTitle: "切换到深色模式",
 
     // 设置搜索框的样式
     search: {
@@ -45,6 +83,6 @@ export default defineConfig({
         },
       },
     }
-    
+
   }
 })
