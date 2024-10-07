@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "爱德华の珂朵莉星球"
-  text: "珂朵莉解决方案中心，分享方案及技术"
+  text: "解决方案收集中心，收集实用方案及技术"
   tagline: 没有技术解决不了的问题,如果有,那就解决提出的人
   image:
     src: /svg/kdl.svg

@@ -7,8 +7,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Python学习', link: 'python/index' },
-      { text: 'AI学习', link: 'ai/index' }
+      { text: 'Python学习', link: '/python/index' },
+      { text: 'AI学习', link: '/ai/index' }
     ],
 
     sidebar: {
