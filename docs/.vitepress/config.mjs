@@ -2,6 +2,8 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  // 部署到github pages时，这个要和自己的仓库地址一致
+  base: '/vitepress/',
   title: "珂朵莉星球",
   description: "爱德华の珂朵莉星球",
   themeConfig: {
