@@ -36,83 +36,83 @@ export default defineConfig({
     nav: [
       { text: 'VitePress教程', 
         items: [
-          { text: 'VitePress搭建', link: '/VitePress/VitePress搭建' },
-          { text: 'VitePress部署', link: '/VitePress/VitePress部署' },
+          { text: 'VitePress搭建', link: '/vitepress/vitepress搭建' },
+          { text: 'VitePress部署', link: '/vitepress/Vitepress部署' },
         ],
       },
       { text: 'Python学习', 
         items: [
-          { text: 'Python环境及入门', link: '/Python/Python环境及入门' },
-          { text: 'Python项目实践', link: '/Python/Python项目实践' },
+          { text: 'Python环境及入门', link: '/python/python环境及入门' },
+          { text: 'Python项目实践', link: '/python/python项目实践' },
         ],
       },
       { text: 'AI学习', 
         items: [
-          { text: '大模型', link: '/AI/大模型' },
-          { text: 'QAbot方案', link: '/AI/QAbot方案' },
-          { text: 'SVC相关', link: '/AI/SVC相关' },
-          { text: 'TTS相关', link: '/AI/TTS相关' },
-          { text: 'SD/绘世启动器', link: '/AI/SD' },
-          { text: '游戏AI工具', link: '/AI/游戏AI工具' }
+          { text: '大模型', link: '/ai/大模型' },
+          { text: 'QAbot方案', link: '/ai/QAbot方案' },
+          { text: 'SVC相关', link: '/ai/SVC相关' },
+          { text: 'TTS相关', link: '/ai/TTS相关' },
+          { text: 'SD/绘世启动器', link: '/ai/SD' },
+          { text: '游戏AI工具', link: '/ai/游戏AI工具' }
         ],
       },
       { text: '生活助手', 
         items: [
-          { text: '自动追番', link: '/Others/自动追番' },
-          { text: '自动录播投稿', link: '/Others/自动录播投稿' },
-          { text: '私有云方案', link: '/Others/私有云方案' },
-          { text: '内网穿透', link: '/Others/内网穿透' },
-          { text: '自己做游戏', link: '/Others/自己做游戏' },
-          { text: 'MMD基础教程', link: '/Others/MMD基础教程' }
+          { text: '自动追番', link: '/others/自动追番' },
+          { text: '自动录播投稿', link: '/others/自动录播投稿' },
+          { text: '私有云方案', link: '/others/私有云方案' },
+          { text: '内网穿透', link: '/others/内网穿透' },
+          { text: '自己做游戏', link: '/others/自己做游戏' },
+          { text: 'MMD基础教程', link: '/others/MMD基础教程' }
         ],
       },
       { text: '社畜打工', 
         items: [
-          { text: '支付宝商家平台', link: '/Others/自动追番' },
-          { text: '微信商家平台', link: '/Others/自动录播投稿' }
+          { text: '支付宝商家平台', link: '/work/自动追番' },
+          { text: '微信商家平台', link: '/work/自动录播投稿' }
         ],
-      },
+      }
     ],
 
     sidebar: [
       { text: 'VitePress教程', 
         items: [
-          { text: 'VitePress搭建', link: '/VitePress/VitePress搭建' },
-          { text: 'VitePress部署', link: '/VitePress/VitePress部署' },
+          { text: 'VitePress搭建', link: '/vitepress/vitepress搭建' },
+          { text: 'VitePress部署', link: '/vitepress/Vitepress部署' },
         ],
       },
       { text: 'Python学习', 
         items: [
-          { text: 'Python环境及入门', link: '/Python/Python环境及入门' },
-          { text: 'Python项目实践', link: '/Python/Python项目实践' },
+          { text: 'Python环境及入门', link: '/python/python环境及入门' },
+          { text: 'Python项目实践', link: '/python/python项目实践' },
         ],
       },
       { text: 'AI学习', 
         items: [
-          { text: '大模型', link: '/AI/大模型' },
-          { text: 'QAbot方案', link: '/AI/QAbot方案' },
-          { text: 'SVC相关', link: '/AI/SVC相关' },
-          { text: 'TTS相关', link: '/AI/TTS相关' },
-          { text: 'SD/绘世启动器', link: '/AI/SD' },
-          { text: '游戏AI工具', link: '/AI/游戏AI工具' }
+          { text: '大模型', link: '/ai/大模型' },
+          { text: 'QAbot方案', link: '/ai/QAbot方案' },
+          { text: 'SVC相关', link: '/ai/SVC相关' },
+          { text: 'TTS相关', link: '/ai/TTS相关' },
+          { text: 'SD/绘世启动器', link: '/ai/SD' },
+          { text: '游戏AI工具', link: '/ai/游戏AI工具' }
         ],
       },
       { text: '生活助手', 
         items: [
-          { text: '自动追番', link: '/Others/自动追番' },
-          { text: '自动录播投稿', link: '/Others/自动录播投稿' },
-          { text: '私有云方案', link: '/Others/私有云方案' },
-          { text: '内网穿透', link: '/Others/内网穿透' },
-          { text: '自己做游戏', link: '/Others/自己做游戏' },
-          { text: 'MMD基础教程', link: '/Others/MMD基础教程' }
+          { text: '自动追番', link: '/others/自动追番' },
+          { text: '自动录播投稿', link: '/others/自动录播投稿' },
+          { text: '私有云方案', link: '/others/私有云方案' },
+          { text: '内网穿透', link: '/others/内网穿透' },
+          { text: '自己做游戏', link: '/others/自己做游戏' },
+          { text: 'MMD基础教程', link: '/others/MMD基础教程' }
         ],
       },
       { text: '社畜打工', 
         items: [
-          { text: '支付宝商家平台', link: '/Others/自动追番' },
-          { text: '微信商家平台', link: '/Others/自动录播投稿' }
+          { text: '支付宝商家平台', link: '/work/自动追番' },
+          { text: '微信商家平台', link: '/work/自动录播投稿' }
         ],
-      },
+      }
     ],
 
     socialLinks: [
