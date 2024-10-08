@@ -1,5 +1,5 @@
 # vitepress搭建部署
 
-[基础入门](./基础入门.md)
+[VitePress搭建](./vitepress搭建.md)
 
-[进阶提升](./进阶提升.md)
+[VitePress部署](./vitepress部署.md)

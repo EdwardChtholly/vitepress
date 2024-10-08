@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import mdItCustomAttrs from 'markdown-it-custom-attrs'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -6,23 +7,113 @@ export default defineConfig({
   base: '/vitepress/',
   title: "珂朵莉星球",
   description: "爱德华の珂朵莉星球",
+  markdown: {
+    config: (md) => {
+      // use more markdown-it plugins!
+      md.use(mdItCustomAttrs, "image", {
+        "data-fancybox": "gallery",
+      });
+    },
+  },
+  head: [
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js",
+      },
+    ],
+  ],
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Python学习', link: '/python/index' },
-      { text: 'AI学习', link: '/ai/index' }
+      { text: 'VitePress教程', 
+        items: [
+          { text: 'VitePress搭建', link: '/VitePress/VitePress搭建' },
+          { text: 'VitePress部署', link: '/VitePress/VitePress部署' },
+        ],
+      },
+      { text: 'Python学习', 
+        items: [
+          { text: 'Python环境及入门', link: '/Python/Python环境及入门' },
+          { text: 'Python项目实践', link: '/Python/Python项目实践' },
+        ],
+      },
+      { text: 'AI学习', 
+        items: [
+          { text: '大模型', link: '/AI/大模型' },
+          { text: 'QAbot方案', link: '/AI/QAbot方案' },
+          { text: 'SVC相关', link: '/AI/SVC相关' },
+          { text: 'TTS相关', link: '/AI/TTS相关' },
+          { text: 'SD/绘世启动器', link: '/AI/SD' },
+          { text: '游戏AI工具', link: '/AI/游戏AI工具' }
+        ],
+      },
+      { text: '生活助手', 
+        items: [
+          { text: '自动追番', link: '/Others/自动追番' },
+          { text: '自动录播投稿', link: '/Others/自动录播投稿' },
+          { text: '私有云方案', link: '/Others/私有云方案' },
+          { text: '内网穿透', link: '/Others/内网穿透' },
+          { text: '自己做游戏', link: '/Others/自己做游戏' },
+          { text: 'MMD基础教程', link: '/Others/MMD基础教程' }
+        ],
+      },
+      { text: '社畜打工', 
+        items: [
+          { text: '支付宝商家平台', link: '/Others/自动追番' },
+          { text: '微信商家平台', link: '/Others/自动录播投稿' }
+        ],
+      },
     ],
 
-    sidebar: {
-      '/python':[
-        { text: '基础入门', link: '/python/基础入门' },
-        { text: '进阶提升', link: '/python/进阶提升' }
-      ],
-      '/ai':[
-        { text: '基础入门', link: '/ai/基础入门' },
-        { text: '进阶提升', link: '/ai/进阶提升' }
-      ]
-  },
+    sidebar: [
+      { text: 'VitePress教程', 
+        items: [
+          { text: 'VitePress搭建', link: '/VitePress/VitePress搭建' },
+          { text: 'VitePress部署', link: '/VitePress/VitePress部署' },
+        ],
+      },
+      { text: 'Python学习', 
+        items: [
+          { text: 'Python环境及入门', link: '/Python/Python环境及入门' },
+          { text: 'Python项目实践', link: '/Python/Python项目实践' },
+        ],
+      },
+      { text: 'AI学习', 
+        items: [
+          { text: '大模型', link: '/AI/大模型' },
+          { text: 'QAbot方案', link: '/AI/QAbot方案' },
+          { text: 'SVC相关', link: '/AI/SVC相关' },
+          { text: 'TTS相关', link: '/AI/TTS相关' },
+          { text: 'SD/绘世启动器', link: '/AI/SD' },
+          { text: '游戏AI工具', link: '/AI/游戏AI工具' }
+        ],
+      },
+      { text: '生活助手', 
+        items: [
+          { text: '自动追番', link: '/Others/自动追番' },
+          { text: '自动录播投稿', link: '/Others/自动录播投稿' },
+          { text: '私有云方案', link: '/Others/私有云方案' },
+          { text: '内网穿透', link: '/Others/内网穿透' },
+          { text: '自己做游戏', link: '/Others/自己做游戏' },
+          { text: 'MMD基础教程', link: '/Others/MMD基础教程' }
+        ],
+      },
+      { text: '社畜打工', 
+        items: [
+          { text: '支付宝商家平台', link: '/Others/自动追番' },
+          { text: '微信商家平台', link: '/Others/自动录播投稿' }
+        ],
+      },
+    ],
 
     socialLinks: [
       { 
@@ -31,7 +122,7 @@ export default defineConfig({
       }, 
         link: 'https://space.bilibili.com/37483985' 
       },
-      { icon: 'github', link: 'https://github.com/ysa0327' }
+      { icon: 'github', link: 'https://github.com/EdwardChtholly' }
     ],
 
     footer: {
