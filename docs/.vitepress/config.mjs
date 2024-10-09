@@ -37,7 +37,7 @@ export default defineConfig({
       { text: 'VitePress教程', 
         items: [
           { text: 'VitePress搭建', link: '/vitepress/vitepress搭建' },
-          { text: 'VitePress部署', link: '/vitepress/Vitepress部署' },
+          { text: 'VitePress部署', link: '/vitepress/vitepress部署' },
         ],
       },
       { text: 'Python学习', 
@@ -78,7 +78,7 @@ export default defineConfig({
       { text: 'VitePress教程', 
         items: [
           { text: 'VitePress搭建', link: '/vitepress/vitepress搭建' },
-          { text: 'VitePress部署', link: '/vitepress/Vitepress部署' },
+          { text: 'VitePress部署', link: '/vitepress/vitepress部署' },
         ],
       },
       { text: 'Python学习', 
